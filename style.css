@@ -1,0 +1,527 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background: linear-gradient(90deg, #f7e499, #ffe8b5);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+}
+
+.header_logo img {
+    width: 85px;
+    height: auto;
+}
+
+.nav_list ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_list ul li {
+    list-style: none;
+}
+
+.nav_list ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav_list ul li a:hover,
+.nav_list ul li a.active {
+    color: #088178;
+}
+
+.header_list_icon a {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #444;
+    transition: 0.3s ease;
+}
+
+.header_list_icon a:hover {
+    color: #088178;
+}
+
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    background: linear-gradient(120deg, #fceabb, #f8b500);
+}
+
+#hero h4 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#hero h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #222;
+}
+
+#hero h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #088178;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+#hero button {
+    background: #088178;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+#hero button:hover {
+    background: #065e5a;
+    transform: translateY(-2px);
+}
+
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+#features .f-box {
+    width: 300px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    background: #fff6e5;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#features .f-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#features .f-box img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+#features .f-box h5 {
+    font-size: 16px;
+    color: white;
+    background: #e6b800;
+    padding: 8px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.product-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.product-section h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.product-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.pro-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product-cart {
+    width: 260px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.product-cart:hover {
+    transform: translateY(-5px);
+}
+
+.product-cart img {
+    width: 100%;
+    height: 220px;        
+    object-fit: cover;     
+    border-radius: 15px;
+    background: #fafafa;
+}
+
+
+.product-cart span {
+    color: #999;
+    font-size: 14px;
+}
+
+.product-cart h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #222;
+}
+
+.product-cart .stars {
+    color: gold;
+}
+
+.product-cart .buy-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 12px;
+    border-radius: 50%;
+    background: #ebebeb;
+    color: #088178;
+    transition: 0.3s;
+}
+
+.product-cart .buy-icon:hover {
+    background: #088178;
+    color: white;
+}
+
+
+#off-banner {
+    background: url("images/banner 2.avif") no-repeat center/cover;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 40px 20px;
+}
+
+
+#off-banner .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+#off-banner h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+#off-banner h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+#off-banner button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 30px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 30px;
+    background: #088178;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#off-banner button:hover {
+    background: #065e5a;
+    transform: translateY(-2px);
+}
+
+
+#banners {
+    margin: 60px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+#banners h1,
+#banners h4,
+#banners h3,
+#banners span {
+    color: #fff;
+}
+
+.big-banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.big-banners div {
+    flex: 1 1 48%;
+    min-height: 300px;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.big-banners div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); 
+    border-radius: 12px;
+}
+
+.big-banners div:hover {
+    transform: scale(1.03);
+}
+
+.big-banners div h4,
+.big-banners div h1,
+.big-banners div span,
+.big-banners div .btn1 {
+    position: relative;
+    z-index: 2;
+}
+
+.big-banners div h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.big-banners div h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.big-banners div span {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.big-banners .btn1 {
+    background: #fff;
+    color: #088178;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.big-banners .btn1:hover {
+    background: #088178;
+    color: #fff;
+}
+
+
+.big-banner1 {
+    background-image: url("images/banner.jpg");
+}
+.big-banner2 {
+    background-image: url("images/upcoming.avif");
+}
+
+
+.small-banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.small-banners div {
+    flex: 1 1 30%;
+    min-height: 200px;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.small-banners div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    border-radius: 12px;
+}
+
+.small-banners div:hover {
+    transform: scale(1.05);
+}
+
+.small-banners div h3,
+.small-banners div span {
+    position: relative;
+    z-index: 2;
+}
+
+.small-banners div h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.small-banners div span {
+    font-size: 16px;
+}
+
+
+.small-banner1 {
+    background-image: url("https://thumbs.dreamstime.com/b/african-shopaholic-girl-showing-shopper-bags-standing-over-beige-background-successful-shopping-concept-african-shopaholic-girl-372232188.jpg");
+}
+.small-banner2 {
+    background-image: url("https://www.shutterstock.com/image-photo/positive-man-woman-having-fun-600nw-1754520590.jpg");
+}
+.small-banner3 {
+    background-image: url("images/t-shirts.jpg");
+}
+
+
+
+
+#footer {
+    display: flex;
+    padding: 50px 80px;
+    background: #f8f8f8;
+    color: #555;
+}
+
+#footer h3 {
+    margin-bottom: 5px;
+    color: #222;
+}
+
+#footer a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+#footer a:hover {
+    color: #088178;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 992px) {
+    .header_container {
+        padding: 15px 40px;
+    }
+   
+    #hero{height: 50vh;}
+
+    #hero h2 { font-size: 45px; }
+    #hero h1 { font-size: 50px; }
+    #off-banner{
+        height: 20vh;
+    }
+}
+@media (max-width: 768px) {
+    
+    .big-banners {
+        flex-direction: column;
+    }
+    .small-banners {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav_list ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+
+    #footer {
+       
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
